@@ -48,7 +48,8 @@
                     <h3 class="technology__title" id="html">HTML</h3>
                     <div class="technology__description">
                         <p>
-                            <abbr title="Hypertext Markup Language">HTML</abbr>&nbsp;&mdash; это язык разметки, который
+                            <abbr title="Hypertext Markup Language">HTML</abbr>&nbsp;&mdash; это язык гипертекстовой
+                            разметки, который
                             используется для структурирования и&nbsp;отображения веб-страницы и&nbsp;её&nbsp;контента.
                             HTML-документ состоит из элементов, которые оборачивают различные части контента, чтобы
                             заставить их&nbsp;отображаться или действовать определённым образом. HTML-элементы
@@ -79,6 +80,21 @@
                             <img alt="element attribute" src="img/element-attribute.png" width="100%">
                             <figcaption class="image-title">Атрибуты HTML-элемента</figcaption>
                         </figure>
+                        <p>
+                            Рассмотрим основные HTML-элементы для разметки текста:
+                        </p>
+                        <ul class="technology__description-list">
+                            <li>Заголовки (h1 – h6)</li>
+                            <li>Абзацы (p)</li>
+                            <li>Списки нумерованные и ненумерованные (ol и ul)</li>
+                            <li>Ссылки (a) с атрибутом
+                                <a class="link"
+                                   href="https://developer.mozilla.org/ru/docs/web/html/element/a#attr-href">href</a>
+                            </li>
+                        </ul>
+                        <p>
+                            Другие HTML-элементы можно найти в&nbsp;<a class="link" href="http://htmlbook.ru/html">справочнике</a>.
+                        </p>
                     </div>
                 </li>
                 <li class="technology">
@@ -97,12 +113,12 @@
                             Набор правил CSS включает в&nbsp;себя:
                         </p>
                         <ol class="technology__description-list">
-                            <li>Селектор (<strong>Selector</strong>) выбирает HTML-элемент с&nbsp;соответствующим именем
+                            <li>Селектор (<strong>Selector</strong>) выбирает все HTML-элементы соответствующего типа
                             </li>
                             <li>Объявление (<strong>Declaration</strong>)&nbsp;&mdash; одно из&nbsp;правил, которое
                                 указывает, что и&nbsp;как нужно стилизовать
                             </li>
-                            <li>Свойство (<strong>Property</strong>), которое нужно стилизовать</li>
+                            <li>Свойство (<strong>Property</strong>), которое нужно изменить</li>
                             <li>Значение свойства (<strong>Property value</strong>) из&nbsp;множества возможных
                                 вариантов для данного свойства
                             </li>
@@ -111,16 +127,49 @@
                             <img alt="CSS ruleset" src="img/css-ruleset.png" width="100%">
                             <figcaption class="image-title">Набор правил CSS</figcaption>
                         </figure>
+                        <p>
+                            Существует множество различных типов селектора. Выше был рассмотрен только селектор
+                            элементов, который выбирает все элементы определённого типа в&nbsp;HTML&nbsp;документе. Но&nbsp;можно
+                            сделать выбор более конкретным.
+                        </p>
+                        <p>
+                            Вот некоторые из&nbsp;наиболее распространённых типов селекторов:
+                        </p>
+                        <ul class="technology__description-list">
+                            <li>Селектор элемента</li>
+                            <li>Селектор идентификатора</li>
+                            <li>Селектор класса</li>
+                            <li>Селектор атрибута</li>
+                            <li>Селектор псевдокласса</li>
+                        </ul>
+                        <p>
+                            Более подробную информацию о&nbsp;селекторах можно найти <a class="link"
+                                                                                        href="https://developer.mozilla.org/ru/docs/Learn/CSS/Building_blocks/Selectors">здесь</a>.
+                        </p>
                     </div>
                 </li>
                 <li class="technology">
-                    <img alt="js logo" src="img/js-logo.png" class="technology__logo">
-                    <h3 class="technology__title" id="js">JavaScript</h3>
-                    <p class="technology__description">
-                        JavaScript&nbsp;&mdash; это язык программирования, который применяется к&nbsp;HTML&nbsp;документу,
-                        и может обеспечить динамическую интерактивность на&nbsp;веб-сайтах. Например, отклик при нажатии
-                        кнопок или при вводе данных в&nbsp;формы, динамические стили, анимация.
-                    </p>
+                    <div class="technology__description">
+                        <img alt="js logo" src="img/js-logo.png" class="technology__logo">
+                        <h3 class="technology__title" id="js">JavaScript</h3>
+                        <p>
+                            JavaScript&nbsp;&mdash; это язык программирования, который применяется к&nbsp;HTML-документу,
+                            и может обеспечить динамическую интерактивность на&nbsp;веб-сайтах. Например, отклик при
+                            нажатии
+                            кнопок или при вводе данных в&nbsp;формы, динамические стили, анимация.
+                        </p>
+                        <p>
+                            Для создания действительной интерактивности на&nbsp;веб-сайте вам необходимы события.
+                            События&nbsp;&mdash; это
+                            структура, которая следит за&nbsp;тем, что происходит в&nbsp;браузере, а&nbsp;затем
+                            позволяет запускать код
+                            в&nbsp;ответ на&nbsp;это. Наиболее очевидным является событие клика, которое вызывается
+                            браузером,
+                            когда пользователь щелкает по&nbsp;элементу страницы мышью.
+                        </p>
+                        <div class="def"></div>
+                        <button class="technology__description-button button-js" type="button">Щелкни здесь</button>
+                    </div>
                 </li>
             </ul>
         </div>

@@ -135,6 +135,31 @@ abbr[title]{
     font-weight: 400;
 }
 
+.technology__description-button{
+    display: block;
+    border: solid 1px #8c8c8c;
+    padding: 8px 16px;
+    background: none;
+    font-weight: 300;
+    margin: 8px auto;
+    transition: background-color .5s ease-in-out;
+}
+
+.technology__description-button:hover{
+    background: #f4f4f4;
+    transition: background-color .5s ease-in-out;
+}
+
+.def__title{
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.def__description{
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
+
 .button{
     border-style: none;
     position: absolute;
@@ -148,13 +173,13 @@ abbr[title]{
 }
 
 .button:hover{
-    border: none;
-    box-shadow: 0 4px 10px #9d9d9d;
+    border-color: #ebebeb;
+    box-shadow: 0 4px 8px #afafaf;
     transition: all .5s ease-in-out;
 }
 
 @media screen and (max-width:768px) {
     .technology:last-of-type{
-        margin-bottom: 112px;
+        margin-bottom: 80px;
     }
 }
