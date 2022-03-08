@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, Arial, sans-serif;
+    background: url("img/bg-1.svg") 0 0 no-repeat, url("img/bg-2.svg") 0 100% no-repeat;
+}
+
+.container{
+    position: relative;
+}
+
+.foreword{
+    font-weight: 300;
+    margin: 56px 0;
+}
+
+.foreword__title{
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.contents{
+    margin-bottom: 56px;
+}
+
+.contents__title{
+    border-bottom: solid 1px #8c8c8c;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+    padding: 0 16px 8px 16px;
+    display: inline-block;
+}
+
+.contents__list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.contents__item{
+    margin: .5rem 0;
+}
+
+.contents__link{
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+    transition: color .5s ease-in-out;
+}
+
+.contents__link:hover{
+    color: #7b7b7b;
+    transition: color .5s ease-in-out;
+}
+
+.contents__link:before{
+    content: '//';
+    display: inline-block;
+    opacity: 0;
+    margin-right: 8px;
+    transition: opacity .5s ease-in-out;
+}
+
+.contents__link:hover:before{
+    opacity: 100%;
+    transition: opacity .5s ease-in-out;
+}
+
+.intro{
+    margin-bottom: 56px;
+    font-weight: 300;
+}
+
+.intro__title{
+    border-bottom: solid 1px #8c8c8c;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.link{
+    text-decoration: none;
+    color: #083b88;
+}
+
+.technology-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.technology{
+    margin-bottom: 36px;
+}
+
+.technology__title{
+    border-bottom: solid 1px #8c8c8c;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    margin-right: 100px;
+}
+
+.technology__logo{
+    height: 80px;
+    float: right;
+}
+
+.technology__description{
+    font-weight: 300;
+}
+
+.technology__description-list{
+    margin-bottom: 16px;
+}
+
+.technology__description-image{
+    margin-bottom: 16px;
+}
+
+.image-title{
+    text-align: center;
+    margin-top: 8px;
+    color: #7b7b7b;
+}
+
+abbr[title]{
+    text-decoration: none;
+    cursor: default;
+    font-weight: 400;
+}
+
+.button{
+    border-style: none;
+    position: absolute;
+    bottom: 36px;
+    left: 12px;
+    border-bottom: solid 1px #8c8c8c;
+    padding: 8px 16px;
+    background: none;
+    font-weight: 300;
+    transition: all .5s ease-in-out;
+}
+
+.button:hover{
+    border: none;
+    box-shadow: 0 4px 10px #9d9d9d;
+    transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width:768px) {
+    .technology:last-of-type{
+        margin-bottom: 112px;
+    }
+}

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang=ru>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Веб-технологии</title>
+</head>
+<body>
+<div class="container">
+    <div class="foreword">
+        <h1 class="foreword__title">Современные веб-технологии</h1>
+        <p>
+            Можно выделить два основных типа веб-технологий. Первый тип&nbsp;&mdash; frontend, который отвечает за&nbsp;внешний
+            вид сайта и доступен в&nbsp;браузере пользователя. Второй тип веб-технологий&nbsp;&mdash; backend, который
+            работает на&nbsp;сервере и&nbsp;используется для обработки данных, его действия обычно скрыты от&nbsp;пользователя.
+            Далее речь пойдет о&nbsp;frontend-технологиях.
+        </p>
+    </div>
+    <div class="row">
+        <div class="contents col-md-4">
+            <h2 class="contents__title">Оглавление</h2>
+            <ul class="contents__list">
+                <li class="contents__item"><a class="contents__link" href="#html">HTML</a></li>
+                <li class="contents__item"><a class="contents__link" href="#css">CSS</a></li>
+                <li class="contents__item"><a class="contents__link" href="#js">JavaScript</a></li>
+            </ul>
+        </div>
+        <div class="content col-md-8">
+            <div class="intro">
+                <h2 class="intro__title">Frontend</h2>
+                <p>
+                    Под понятием frontend подразумевается разработка видимого для пользователя интерфейса и&nbsp;функций,
+                    благодаря которым пользователь может взаимодействовать с&nbsp;интерфейсом. В&nbsp;основе
+                    frontend-разработки лежат три технологии:
+                    <a class="link" href="https://developer.mozilla.org/ru/docs/Learn/HTML">HTML</a>,
+                    <a class="link" href="https://developer.mozilla.org/ru/docs/Learn/CSS">CSS</a> и
+                    <a class="link" href="https://developer.mozilla.org/ru/docs/Learn/JavaScript">JavaScript</a>.
+                </p>
+            </div>
+            <ul class="technology-list">
+                <li class="technology">
+                    <img alt="HTML logo" src="img/html-logo.png" class="technology__logo">
+                    <h3 class="technology__title" id="html">HTML</h3>
+                    <div class="technology__description">
+                        <p>
+                            <abbr title="Hypertext Markup Language">HTML</abbr>&nbsp;&mdash; это язык разметки, который
+                            используется для структурирования и&nbsp;отображения веб-страницы и&nbsp;её&nbsp;контента.
+                            HTML-документ состоит из элементов, которые оборачивают различные части контента, чтобы
+                            заставить их&nbsp;отображаться или действовать определённым образом. HTML-элементы
+                            обозначаются с&nbsp;помощью тегов, они могут быть парными и&nbsp;непарными.
+                        </p>
+                        <p>
+                            Главными частями HTML-элемента являются:
+                        </p>
+                        <ol class="technology__description-list">
+                            <li>Открывающий тег (<strong>Opening tag</strong>) указывает, где элемент начинается</li>
+                            <li>Закрывающий тег (<strong>Closing tag</strong>) указывает, где элемент заканчивается</li>
+                            <li>Контент (<strong>Content</strong>)&nbsp;&mdash; содержимое HTML-элемента</li>
+                            <li>Элемент (<strong>Element</strong>), состоящий из&nbsp;тегов и&nbsp;контента</li>
+                        </ol>
+                        <figure class="technology__description-image">
+                            <img alt="HTML element" src="img/html-element.png" width="100%">
+                            <figcaption class="image-title">Структура HTML-элемента</figcaption>
+                        </figure>
+                        <p>
+                            HTML-элементы также могут иметь атрибуты, которые содержат дополнительную информацию об
+                            элементе. В&nbsp;данном случае используется атрибут
+                            <a class="link"
+                               href="https://developer.mozilla.org/ru/docs/web/html/global_attributes/class">class</a>
+                            со&nbsp;значением &laquo;editor-note&raquo;. Класс позволяет дать элементу идентификационное
+                            имя, которое может позже использоваться, чтобы обращаться к&nbsp;элементу.
+                        </p>
+                        <figure class="technology__description-image">
+                            <img alt="element attribute" src="img/element-attribute.png" width="100%">
+                            <figcaption class="image-title">Атрибуты HTML-элемента</figcaption>
+                        </figure>
+                    </div>
+                </li>
+                <li class="technology">
+                    <img alt="CSS logo" src="img/css-logo.png" class="technology__logo">
+                    <h3 class="technology__title" id="css">CSS</h3>
+                    <div class="technology__description">
+                        <p>
+                            <abbr title="Cascading Style Sheets">CSS</abbr>&nbsp;&mdash; это язык таблицы стилей,
+                            который позволяет применять стили выборочно к&nbsp;элементам веб-страницы. В&nbsp;отличие от&nbsp;HTML,
+                            который служит для определения структуры и&nbsp;семантики содержимого, CSS отвечает за&nbsp;его
+                            внешний вид и отображение. Например, с&nbsp;помощью CSS можно изменять шрифт, цвет, размер,
+                            межстрочный интервал, разделять содержимое на&nbsp;колонки, а&nbsp;также добавлять анимацию
+                            и&nbsp;другие декоративные элементы.
+                        </p>
+                        <p>
+                            Набор правил CSS включает в&nbsp;себя:
+                        </p>
+                        <ol class="technology__description-list">
+                            <li>Селектор (<strong>Selector</strong>) выбирает HTML-элемент с&nbsp;соответствующим именем
+                            </li>
+                            <li>Объявление (<strong>Declaration</strong>)&nbsp;&mdash; одно из&nbsp;правил, которое
+                                указывает, что и&nbsp;как нужно стилизовать
+                            </li>
+                            <li>Свойство (<strong>Property</strong>), которое нужно стилизовать</li>
+                            <li>Значение свойства (<strong>Property value</strong>) из&nbsp;множества возможных
+                                вариантов для данного свойства
+                            </li>
+                        </ol>
+                        <figure class="technology__description-image">
+                            <img alt="CSS ruleset" src="img/css-ruleset.png" width="100%">
+                            <figcaption class="image-title">Набор правил CSS</figcaption>
+                        </figure>
+                    </div>
+                </li>
+                <li class="technology">
+                    <img alt="js logo" src="img/js-logo.png" class="technology__logo">
+                    <h3 class="technology__title" id="js">JavaScript</h3>
+                    <p class="technology__description">
+                        JavaScript&nbsp;&mdash; это язык программирования, который применяется к&nbsp;HTML&nbsp;документу,
+                        и может обеспечить динамическую интерактивность на&nbsp;веб-сайтах. Например, отклик при нажатии
+                        кнопок или при вводе данных в&nbsp;формы, динамические стили, анимация.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="#">
+        <button class="button" type="button">Наверх</button>
+    </a>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
