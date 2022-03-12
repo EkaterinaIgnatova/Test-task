@@ -46,3 +46,22 @@ document.querySelector('.technology__description-button').addEventListener(
         }
     }
 )
+
+window.addEventListener(
+    'scroll',
+    () => {
+        if(window.pageYOffset > document.documentElement.clientHeight){
+            document.querySelector('.button').classList.remove('hide')
+        }
+        if(window.pageYOffset < document.documentElement.clientHeight){
+            document.querySelector('.button').classList.add('hide')
+        }
+    }
+)
+
+document.querySelector('.button').addEventListener(
+    'click',
+    () => {
+        window.scrollTo(0, 0)
+    }
+)

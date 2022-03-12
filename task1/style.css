@@ -17,7 +17,7 @@ body{
 }
 
 .foreword__title{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
     text-align: center;
     margin-bottom: 16px;
@@ -94,7 +94,7 @@ body{
 }
 
 .technology{
-    margin-bottom: 36px;
+    margin-bottom: 32px;
 }
 
 .technology__title{
@@ -160,10 +160,14 @@ abbr[title]{
     margin-bottom: 32px;
 }
 
+.hide{
+    opacity: 0;
+}
+
 .button{
     border-style: none;
-    position: absolute;
-    bottom: 36px;
+    position: sticky;
+    bottom: 32px;
     left: 12px;
     border-bottom: solid 1px #8c8c8c;
     padding: 8px 16px;
@@ -179,7 +183,16 @@ abbr[title]{
 }
 
 @media screen and (max-width:768px) {
-    .technology:last-of-type{
-        margin-bottom: 80px;
+    .technology-list{
+        margin-bottom: 96px;
+    }
+    .button{
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    html{
+        font-size: 18px;
     }
 }
